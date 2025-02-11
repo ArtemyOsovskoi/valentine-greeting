@@ -6,6 +6,7 @@
 
 body, html {
     height: 100%;
+    overflow: hidden;
     background: linear-gradient(#ffffff, #f5c1c1);
     font-family: "Caveat", serif;
 }

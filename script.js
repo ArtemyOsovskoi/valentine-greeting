@@ -9,7 +9,6 @@ bottom_container.style.visibility = "hidden";
 
 function yesButton() {
   yes_btn.addEventListener("click", () => {
-    console.log("yes!");
     gif.src = "images/happi-cat.gif";
     text.innerHTML = "♡ Спасибо что стала моей Валентинкой :3 ♡";
     body.style.backgroundImage = "url(images/falling_hearts.gif)";
@@ -21,9 +20,10 @@ yesButton();
 
 function noButton() {
   no_btn.addEventListener("click", () => {
-    console.log("no!");
-    yes_btn.style.width + 100;
-
+    gif.src = "images/cat-crying.gif";
+    text.innerHTML = "(｡•́︿•̀｡)";
+    body.style.backgroundImage = "url(images/peperain.gif)";
+    bottom_container.style.visibility = "hidden";
 
   });
 }

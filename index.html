@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="rus">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Day Greeting</title>
     <link href="styles.css" rel="stylesheet"/>
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="main">
-        <div id="gif"></div>
+        <div id="gif_container">
+            <img id="gif" src="images/animal-kitty.gif" alt="cute cat with hearts" />
+        </div>
         <div id="question">
-            <button id="yes_btn">yes</button>
-            <button id="no_btn">no</button>
+            <p id="question_text">♥💕 Ты будешь моей Валентинкой? ♥💕</p>
+            <div id="buttons">
+                <button id="yes_btn">Да</button>
+                <button id="no_btn">Нет</button>
+            </div>
+        </div>
+        <div id="bottom_gif_container">
+            <img id="bottom_gif" src="images/cat_love.gif" alt="cute cat with heart" />
         </div>
     </div>
 </body>

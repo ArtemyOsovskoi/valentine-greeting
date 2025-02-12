@@ -1,63 +1,72 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body, html {
-    height: 100%;
-    overflow: hidden;
-    background: linear-gradient(#ffffff, #f5c1c1);
-    font-family: "Caveat", serif;
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(#ffffff, #f5c1c1);
+  font-family: "Caveat", serif;
 }
 
 #main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
 }
 
 #question {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  transition-duration: 0.4s;
+  padding: 16px 46px 16px 46px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  margin: 0.6rem;
+  height: 60px;
+  width: 140px;
+  text-align: center;
 }
 
 #yes_btn {
-    padding: 16px 46px 16px 46px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 15px;
-    background-color: rgb(117, 222, 117);
+  background-color: lightgreen;
 }
 
 #yes_btn:hover {
-    background-color: lightgreen;
-    padding: 18px 48px 18px 48px;
+  background-color: rgb(105, 243, 105);
+  box-shadow:
+    0 4px 8px 4px rgba(0, 0, 0, 0.24),
+    0 12px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #no_btn {
-    padding: 16px 46px 16px 46px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 15px;
-    background-color: rgb(218, 102, 102);
+  background-color: lightcoral;
+  width: fit-content;
 }
 
 #no_btn:hover {
-    background-color: lightcoral;
-    padding: 18px 48px 18px 48px;
+  background-color: rgb(230, 87, 87);
+  box-shadow:
+    0 4px 8px 4px rgba(0, 0, 0, 0.24),
+    0 12px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #question_text {
-    font-size: 48px;
-    font-weight: bold;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 #bottom_gif_container {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }

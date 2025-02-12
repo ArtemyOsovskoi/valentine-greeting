@@ -9,13 +9,15 @@ bottom_container.style.visibility = "hidden";
 
 function yesButton() {
   yes_btn.addEventListener("click", () => {
-    gif.src = "images/happi-cat.gif";
+    gif.src = "images/cat_love.gif";
     text.innerHTML = "♡ Спасибо что стала моей Валентинкой :3 ♡";
     body.style.backgroundImage = "url(images/falling_hearts.gif)";
     bottom_container.style.visibility = "visible";
+    yes_btn.style.width = 140 + "px";
+    yes_btn.style.height = 60 + "px";
+    no_btn.innerHTML = "Нет";
   });
 }
-
 yesButton();
 
 function noButton() {
@@ -25,7 +27,21 @@ function noButton() {
     body.style.backgroundImage = "url(images/peperain.gif)";
     bottom_container.style.visibility = "hidden";
 
+    let yesBtnWidth = yes_btn.offsetWidth;
+    let yesBtnHeight = yes_btn.offsetHeight;
+
+    if (yesBtnWidth < 360 && yesBtnHeight < 360) {
+      yes_btn.style.width = yesBtnWidth + 60 + "px";
+      yes_btn.style.height = yesBtnHeight + 60 + "px";
+    }
+
+    let noBtnMessages = [
+      "Точно...?",
+      "Может подумать еще разок...?",
+      "Пожалуйста...?(｡•́︿•̀｡)",
+    ];
+    no_btn.innerHTML =
+      noBtnMessages[Math.floor(Math.random() * noBtnMessages.length)];
   });
 }
-
 noButton();

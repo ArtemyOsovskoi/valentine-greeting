@@ -67,6 +67,30 @@ button {
   font-weight: bold;
 }
 
-#bottom_gif_container {
-  margin-top: 2rem;
+@media screen and (max-width: 600px) {
+  #main {
+    text-align: center;
+  }
+
+  img {
+    height: 280px;
+    width: 300px;
+  }
 }
+
+@media screen and (max-width: 380px) {
+  #main {
+    text-align: center;
+  }
+
+  img {
+    height: 180px;
+    width: 200px;
+  }
+
+  #question_text {
+    font-size: 36px;
+  }
+}
+
+
